@@ -1,3 +1,16 @@
+/*
+  0 - 600 px: Phone
+  600 - 900 px: Tablet portrait
+  900 - 1200 px: Tablet landscape
+  [1200 - 1800] is where our normal style apply
+  1800px+: Big Desktop
+
+  $breakpoint argument choices:
+  - phone
+  - tab-port
+  - tab-land
+  - big-desktop
+*/
 *,
 *::after,
 *::before {
@@ -8,6 +21,16 @@
 
 html {
   font-size: 62.5%;
+}
+@media (max-width: 75em) {
+  html {
+    font-size: 56.25%;
+  }
+}
+@media (max-width: 56.25em) {
+  html {
+    font-size: 50%;
+  }
 }
 
 body {
@@ -854,7 +877,7 @@ body {
 .section-about {
   background-color: #f7f7f7;
   padding: 25rem 0;
-  margin-top: -20vh;
+  margin-top: -24vh;
 }
 
 .section-features {
