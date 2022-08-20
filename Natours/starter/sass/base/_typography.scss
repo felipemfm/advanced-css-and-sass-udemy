@@ -4,7 +4,6 @@ body {
   /* font-size: 16px; */
   line-height: 1.7;
   color: $color-grey-dark;
-  padding: 3rem;
 }
 
 .heading-primary {
@@ -24,6 +23,11 @@ body {
     animation-duration: 1s;
     animation-timing-function: ease-out;
 
+    @include respond(phone) {
+      letter-spacing: 1rem;
+      font-size: 5rem;
+    }
+
     /* animation-iteration-count: 3; */
     /* animation-delay: 3s; */
   }
@@ -35,6 +39,11 @@ body {
     letter-spacing: 1.74rem;
 
     animation: moveInRight 1s ease-out;
+
+    @include respond(phone) {
+      letter-spacing: 1rem;
+      font-size: 0.5rem;
+    }
   }
 }
 
@@ -54,6 +63,13 @@ body {
   letter-spacing: 2px;
   transition: all 0.2s;
 
+  @include respond(tab-port) {
+    letter-spacing: 3rem;
+  }
+  @include respond(phone) {
+    letter-spacing: 2.5rem;
+  }
+
   &:hover {
     transform: skewY(2deg) skewX(15deg) scale(1.1);
     text-shadow: 0.5rem 1rem 2rem rgba($color-black, 0.2);
@@ -69,7 +85,7 @@ body {
 .paragraph {
   font-size: $default-font-size;
 
-  &:not(:last-child){
+  &:not(:last-child) {
     margin-bottom: 3rem;
   }
 }

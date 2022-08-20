@@ -26,6 +26,8 @@
   - tab-port
   - tab-land
   - big-desktop
+
+  ORDER: Base + Typography > general layout + grid layout > components
 */
 @mixin respond($breakpoint) {
   @if $breakpoint == phone {
