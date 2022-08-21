@@ -17,7 +17,7 @@
     transition: all 0.3s;
 
     @include respond(tab-port) {
-      width: 100&;
+      width: 100%;
     }
 
     &:focus {

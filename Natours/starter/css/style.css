@@ -503,9 +503,10 @@ body {
 }
 @media (max-width: 56.25em) {
   .composition__photo--p3 {
-    top: 1rem;
-    left: 0;
+    top: -11rem;
+    left: 65%;
     transform: scale(1.1);
+    z-index: 100;
   }
 }
 .composition__photo:hover {
@@ -569,7 +570,7 @@ body {
 }
 @media (max-width: 56.25em) {
   .form__input {
-    width: 100 .form__input;
+    width: 100%;
   }
 }
 .form__input:focus {
